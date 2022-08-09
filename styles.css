@@ -1,0 +1,30 @@
+.vtable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    border: 1px solid red;
+}
+
+input[type="button"] {
+    width: 100%;
+    font-weight: bold;
+    background-color: tomato;
+    padding: 20px 40px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+input[type="text"] {
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: tomato;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid tomato;
+}

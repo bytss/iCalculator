@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="vtable">
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="results"></td>
+                <td><input type="button" value="X" onclick="clr()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="parseData('7')"></td>
+                <td><input type="button" value="8" onclick="parseData('8')"></td>
+                <td><input type="button" value="9" onclick="parseData('9')"></td>
+                <td><input type="button" value="/" onclick="parseData('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="parseData('4')"></td>
+                <td><input type="button" value="5" onclick="parseData('5')"></td>
+                <td><input type="button" value="6" onclick="parseData('6')"></td>
+                <td><input type="button" value="*" onclick="parseData('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="parseData('1')"></td>
+                <td><input type="button" value="2" onclick="parseData('2')"></td>
+                <td><input type="button" value="3" onclick="parseData('3')"></td>
+                <td><input type="button" value="-" onclick="parseData('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="parseData('0')"></td>
+                <td><input type="button" value="%" onclick="parseData('%')"></td>
+                <td><input type="button" value="=" onclick="calculate()"></td>
+                <td><input type="button" value="+" onclick="parseData('+')"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<!-- java script-->
+
+<!-- math evaluation-->
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" 
+    integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+</script>
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+    integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+</script>
+<!-- relative js -->
+<script src="./script.js"></script>
+
+</html>
